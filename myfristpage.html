@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> My First Web Page </title>
+    <meta name="description" content="Page Description Here"/>
+    <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <style type="text/css">
+        Body {
+            color: red;
+        }
+
+    </style>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+    </script>
+</head>
+
+<body>
+<p>This is a Sample HTML Document.</p>
+<p>This Javascript function will capitalize my name:</p>
+<p>Enter your name: <input type="text" id="fname" onchange="myFunction()"></p>
+
+<p> This is line 1.<br> This is line 2  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  This is line 3.  </P>
+<h1> Header 1 </h1>
+<h2> Header 2 </h2>
+<h3> Header 3 </h3>
+<h4> <font face="arial" size="22" color="blue"> Header 4 </font> </h4>
+<P> <strong> bold text </strong> <br>
+    <em>italic text </em> <br>
+	<u> underline text </u> <br>
+	<strike>strike text </strike> <br>
+	<u><strong><em>bold,italic,and underlined text</em></strong></u>
+</P>
+<h3>my favorite sports</h3>
+<ul> 
+    <li>Basketball</li>
+    <li>soccer</li>
+    <li>Hockey</li>
+	<li>foodball</li>
+</ul>
+
+<h3>My favorite vacations</h3>
+<ol>
+
+    <li>miami,fl</li>
+	<li>new york,ny</li>
+	<li>lost vegas, nv </li>
+	<li>houston, tx</li>
+	
+</ol>
+
+<h1> vacation pictures </h1>
+<p>
+<img src="FL.jpg" width="333" height="250">
+<img src="LV.jpg" width="375" height="250">
+<img src="NY.jpg" width="374" height="250">
+<img src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2022/08_19_urus_perf/s/gate_models_s_03_m.jpg" width="389" height="250">
+</P> 
+</body>
+
+
+</html>

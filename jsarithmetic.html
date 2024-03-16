@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="add"></p>
+
+<p id="add2"></p>
+
+<p id="sub"></p>
+
+<p id="div"></p>
+
+<p id="inc"></p>
+
+<p id="dec"></p>
+
+<p id="mod"></p>
+
+<h1>JavaScript Operator Precedence</h1>
+
+<p id="demo"></p>
+
+<script>
+
+var x = 30 + 100;
+document.getElementById("add").innerHTML = x;
+
+var a =3;
+var b=(20+30) * a;
+
+document.getElementById("add2").innerHTML = b;
+
+var c = 100-50;
+document.getElementById("sub").innerHTML = c;
+
+var d = 100/50;
+document.getElementById("div").innerHTML = d;
+
+var e = 5;
+e++;
+var z = e;
+document.getElementById("inc").innerHTML = z;
+
+var f = 5;
+f--;
+var g = f;
+document.getElementById("dec").innerHTML = g;
+
+var h = 125%10;
+document.getElementById("mod").innerHTML = h;
+
+document.getElementById("demo").innerHTML = (50+200)* 3;
+
+
+
+
+
+</script>
+
+</body>
+</html>

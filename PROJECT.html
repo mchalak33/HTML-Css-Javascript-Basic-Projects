@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Page Layout Example</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			background-color: #ffffff;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: row;
+			height: 100%;
+		}
+
+		.left-menu, .right-menu {
+			width: 15%;
+			background-color: #9fff53;
+			padding: 10px;
+			list-style: none;
+			margin: 0;
+			height: 100%;
+		}
+
+		.left-menu li, .right-menu li {
+			margin-bottom: 10px;
+		}
+
+		.main-content {
+			flex-grow: 1;
+			padding: 10px;
+		}
+
+		header, footer {
+			background-color: #539bff;
+			color: #ffffff;
+			padding: 10px;
+			height: 50px;
+		}
+
+		footer {
+			text-align: center;
+			font-size: 14px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Web Page Layout Example</h1>
+	</header>
+	<div class="container">
+		<ul class="left-menu">
+			<li><a href="#">Link 1</a></li>
+			<li><a href="#">Link 2</a></li>
+			<li><a href="#">Link 3</a></li>
+		</ul>
+		<div class="main-content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis ultrices nisi. Nam non felis eu nisl consectetur venenatis a sit amet nunc. Integer nec nibh et orci venenatis vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse commodo feugiat diam ut euismod. Sed vel ultricies lacus, non lobortis nibh. Donec sed odio sit amet libero iaculis tincidunt. Sed aliquam urna eget sagittis mollis.</p>
+			<p>Nullam commodo erat sed turpis eleifend faucibus. Nunc tincidunt risus justo, eu imperdiet lectus pulvinar vitae. Sed tincidunt libero vitae dui hendrerit elementum. Maecenas sagittis blandit massa vel vestibulum. Curabitur in efficitur magna. Sed et sapien eget arcu venenatis bibendum non non odio. Vivamus eu urna ut mi tincidunt lacinia. Vivamus sit amet nibh vel neque aliquam ultricies. Nulla facilisi. Donec bibendum vitae lectus in aliquam. Maecenas consequat leo quis mi consequat, at sodales elit eleifend.</p>
+		</div>
+		<ol class="right-menu">
+			<li><a href="#">Link 1</a></li>
+			<li><a href="#">Link 2</a></li>
+			<li><a href="#">Link 3</a></li>
+		</ol>
+	</div>
+	<footer>
+		&copy; 2023 Web Page Layout Example
+	</footer>
+</body>
+</html>

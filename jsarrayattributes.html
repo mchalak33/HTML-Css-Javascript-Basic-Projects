@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>js arrays attributes</h1>
+
+<p id="demo"></p>
+
+<h1> JavaScript Changing and Deleting Elements<h1>
+
+<p id="car"></p>
+
+<script>
+	var fruits = ["apple","orange","pear","grape","tangerine","mango"];
+	document.getElementById("demo").innerHTML = fruits.toString(); /**it will display all items in the which are in array and each item is separate by ","**/ 
+	/**  if you want to specify the separator use join method**/
+	document.getElementById("demo").innerHTML = fruits.join(" * "); /** it well display with * b/w strings  **/
+	var car = ["bmw","mg","gt","polo","lamborghini","kl"];
+	car[0]="kia"/** it will Changing the 1st value to kia**/
+	delete car[2];/** it will deletethe element **/
+	car.splice(1, 0,"ms","us");/** use splice we can add the multiplenew items to our array**/
+    document.getElementById("car").innerHTML = car.join(" * ");
+
+</script>
+
+</body>
+</html> 

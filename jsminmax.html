@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 >JS min value in list</h1>
+<p id="max"></p>
+
+<h1>JavaScript math.round</h1>
+
+<p id="demo"></p>
+
+<h1>js arrays</h1>
+
+<p id="fruits"></p>
+
+<script>
+
+	document.getElementById("max").innerHTML = 
+	Math.min(600,300,50,75,-5,-150);/**if we wanted to see the maximum value in list so,in that case we need to update min to max**/
+	
+	document.getElementById("demo").innerHTML = Math.round(15.6);/** if u want 15.6 rouned dowm then update math.round to floor or for round up use math.ceil **/
+	
+	var fruits = ["apple","orange","pear","grape","tangerine","mango"];
+	document.getElementById("fruits").innerHTML = fruits[3]; /**with index number we can reference individual items in arrays**/ 
+	/** if we wanted to display the number of items in array 
+    we can use the length property like fruits.length **/
+	
+
+</script>
+
+</body>
+</html>
